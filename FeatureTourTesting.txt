@@ -1,0 +1,16 @@
+Feature tour testing
+Suciu Andrei-Mircea & Stan Antoniu
+
+TESTED FEATURES
+1a - adds a student, no duplicate ids, e-mail & name of professor string form not checked
+3a - should update student but doesn't work, even though data can be entered.
+4a - shows all students, works as expected
+2a - deletes a student, works as expected
+GUI problem - 4b should be "afisare teme", not "afisare studenti"
+1b - adds theme, works mostly as expected, but deadline > week condition not checked.
+     no feedback given when a theme with same number cannot be added
+2b - deleted a theme, but asks for student id in GUI
+3b - should prolong deadline, but updates the theme. also asks for current week(unused data)
+      also, both 3b and 3a work inconsistently when inputing data, lagging on enter.
+      
+
