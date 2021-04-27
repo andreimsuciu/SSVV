@@ -14,6 +14,8 @@ public class TemaLabValidator implements IValidator<TemaLab> {
             throw new ValidatorException("Sapatamana predarii invalida\n");
         }else if(t.getTermenLimita()<=0 || t.getTermenLimita()>14) {
             throw new ValidatorException("Termen limita invalid\n");
+        }else if(t.getTermenLimita() > t.getSaptammanaPredarii() ) {
+            throw new ValidatorException("Assignment allocation date is smaller than deadline\n");
         }
     }
 }
