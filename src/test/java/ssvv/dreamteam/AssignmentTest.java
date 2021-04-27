@@ -1,10 +1,13 @@
 package ssvv.dreamteam;
 
 import Exceptions.ValidatorException;
+import Repository.XMLFileRepository.NotaXMLRepo;
 import Repository.XMLFileRepository.StudentXMLRepo;
 import Repository.XMLFileRepository.TemaLabXMLRepo;
+import Service.XMLFileService.NotaXMLService;
 import Service.XMLFileService.StudentXMLService;
 import Service.XMLFileService.TemaLabXMLService;
+import Validator.NotaValidator;
 import Validator.StudentValidator;
 import Validator.TemaLabValidator;
 import org.junit.Test;
@@ -123,5 +126,6 @@ public class AssignmentTest {
         }
         assertEquals(0, temaLabXMLService.getSize());
     }
+
 }
 
